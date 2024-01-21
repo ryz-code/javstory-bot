@@ -1887,7 +1887,7 @@ async def Lazy_start():
 
             text += f"> **user_id**: `{user_id}`, **Ban Duration**: `{ban_duration}`, " \
 
-                    f"**Banned on**: `{banned_on}`, **Reason**: `{ban_reason}`\n\n"
+            text += f"> **Banned on**: `{banned_on}`, **Reason**: `{ban_reason}`\n\n"
 
         reply_text = f"Total banned user(s): `{banned_usr_count}`\n\n{text}"
 
