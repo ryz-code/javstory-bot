@@ -1168,7 +1168,23 @@ async def Lazy_start():
 
                                 "ᴘʀᴇꜱꜱ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ʙᴀᴛᴄʜ ʟɪɴᴋ.",
 
-                                reply_markup=InlineKeyboardMarkup([
+                                reply_markup=InlineKeyboardMarkup(
+                                    [
+
+                                [
+
+                                    InlineKeyboardButton("▌│ 𝙅𝙤𝙞𝙣 𝙐𝙥𝙙𝙖𝙩𝙚𝙨 𝘾𝙝𝙖𝙣𝙣𝙚𝙡 ║║", url=invite_link.invite_link)
+
+                                ],
+
+                                [
+
+                                    InlineKeyboardButton("🔄 Refresh 🔄", callback_data="refreshmeh")
+
+                                ]
+
+                                    ]
+                                )
 
 # (c) @LazyDeveloperr
 
