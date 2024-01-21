@@ -2437,7 +2437,7 @@ if __name__ == '__main__':
 
         logging.info(' Service Stopped ')
 
-￼Enter                                    [InlineKeyboardButton("⚡️ ɢᴇᴛ ʙᴀᴛᴄʜ & ᴘᴏꜱᴛ ⚡️", callback_data="getBatchLink")],
+                                   [InlineKeyboardButton("⚡️ ɢᴇᴛ ʙᴀᴛᴄʜ & ᴘᴏꜱᴛ ⚡️", callback_data="getBatchLink")],
 
                                     [InlineKeyboardButton("Close Message", callback_data="closeMessage")]
 
