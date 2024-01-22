@@ -2451,9 +2451,19 @@ if __name__ == '__main__':
 
 
         elif "addToBatchFalse" in cb_data:
+        
+        message_ids = MediaList.get(f"{str(cmd.from_user.id)}", None)
 
+        if message_ids is None:
+            
             await save_media_in_channel(bot, editable=cmd.message, message=cmd.message.reply_to_message)
 
+            return
+        await cmd.message.edit("ᴘʟᴇᴀꜱᴇ ᴡᴀɪᴛ, ɢᴇɴᴇʀᴀᴛɪɴɢ ʙᴀᴛᴄʜ ʟɪɴᴋ...")
+
+      await save_batch_media_in_channel(bot=bot, editable=cmd.message, message_ids=message_ids)
+
+            MediaList[f"{str(cmd.from_user.id)}"] = []
 
 
         elif "getBatchLink" in cb_data:
