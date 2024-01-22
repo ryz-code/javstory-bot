@@ -2436,8 +2436,13 @@ if __name__ == '__main__':
     except KeyboardInterrupt:
 
         logging.info(' Service Stopped ')
+        await cmd.message.edit("ꜰɪʟᴇ ꜱᴀᴠᴇᴅ ɪɴ ʙᴀᴛᴄʜ!\n\n"
 
-                                   [InlineKeyboardButton("⚡️ ɢᴇᴛ ʙᴀᴛᴄʜ & ᴘᴏꜱᴛ ⚡️", callback_data="getBatchLink")],
+                                "ᴘʀᴇꜱꜱ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ʙᴀᴛᴄʜ ʟɪɴᴋ.",
+
+                                reply_markup=InlineKeyboardMarkup([
+
+                                    [InlineKeyboardButton("⚡️ ɢᴇᴛ ʙᴀᴛᴄʜ & ᴘᴏꜱᴛ ⚡️", callback_data="getBatchLink")],
 
                                     [InlineKeyboardButton("Close Message", callback_data="closeMessage")]
 
